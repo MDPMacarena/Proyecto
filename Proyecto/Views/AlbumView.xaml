@@ -24,10 +24,10 @@
             HorizontalAlignment="Center"/>
         <WrapPanel 
             HorizontalAlignment="Center">
-            <Button Width="30" Command="{Binding d.VerEditarCommand}">
+            <Button Width="30" Command="{Binding DataContext.VerEditarCommand, RelativeSource={RelativeSource AncestorType={x:Type local:ListaAlbum}}}">
                 <Image Source="https://cdn-icons-png.flaticon.com/512/32/32355.png"/>
             </Button>
-            <Button Width="30" Command="{Binding VerEliminarCommand}">
+            <Button Width="30" Command="{Binding DataContext.VerEliminarCommand, RelativeSource={RelativeSource AncestorType={x:Type local:ListaAlbum}}}">
                 <Image Source="https://cdn-icons-png.flaticon.com/512/1214/1214594.png"/>
             </Button>
         </WrapPanel>
